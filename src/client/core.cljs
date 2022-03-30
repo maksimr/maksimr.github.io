@@ -6,35 +6,50 @@
    [client.docs :as docs]))
 
 (def articles
-  (map #(str "/docs/" %)
+  (map (fn [id]
+         {:id id
+          :title id
+          :uri (str "/docs/" id)})
     (docs/read-articles "./public/docs")))
 
 (defn fetch-article [uri]
   (-> (js/fetch uri)
     (.then #(.text %))))
 
+(defn build-article-url [id]
+  (str js/location.origin "?" id))
+
 (defn html-elm [html]
   [:div {:dangerouslySetInnerHTML {:__html html}}])
 
-(defn article-elm [path]
+(defn article-item-elm [article]
   (let [state (r/atom nil)]
     (fn []
-      (let [title (last (.split path "/"))
-            open-article (fn [event]
-                           (.preventDefault event)
-                           (->
-                             (fetch-article path)
-                             (.then (fn [text]
-                                      (reset! state text)))))]
+      (let [title (:title article)
+            uri (build-article-url (:id article))]
         [:div
-         [:h1 [:a {:href path
-                   :on-click open-article} title]]
+         [:h1 [:a {:href uri} title]]
          [html-elm (md->html @state)]]))))
 
-(defn app-elm []
+(defn articles-elm []
   [:div (map
           (fn [it]
-            ^{:key it} [article-elm it]) articles)])
+            ^{:key it} [article-item-elm it]) articles)])
+
+(defn article-elm [article]
+  (let [state (r/atom {})]
+    (-> (fetch-article (:uri article))
+      (.then #(reset! state {:text (md->html %)})))
+    (fn []
+      (when (:text @state)
+        [:div [html-elm (:text @state)]]))))
+
+(defn app-elm []
+  (let [id (.slice js/location.search 1)
+        article (when id (first (filter #(= id (:id %)) articles)))]
+    (if article
+      [article-elm article]
+      [articles-elm])))
 
 (defn -main []
   (let [app-node (js/document.getElementById "app")]
