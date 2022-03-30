@@ -1,0 +1,1 @@
+{"version":3,"sources":["client/core.cljs"],"mappings":";AAEA,oBAAA,pBAAMA;AAAN,AACE,mDAAA,3CACE,AACE,wBAAA,xBAACC;;AAGP,AAACD","names":["client.core/-main","js/document.getElementById"],"sourcesContent":["(ns client.core)\n\n(defn -main []\n  (set!\n    (.-innerText\n      (js/document.getElementById \"app\"))\n    \"Hello World!\"))\n\n(-main)"]}
