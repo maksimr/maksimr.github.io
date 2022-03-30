@@ -1,29 +1,24 @@
 {
-  "name": "playground-cljs",
+  "name": "maksimr.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "shadow-cljs watch client",
     "compile": "shadow-cljs compile client",
-    "repl": "shadow-cljs cljs-repl client",
-    "start:server": "shadow-cljs watch server",
-    "compile:server": "shadow-cljs compile server",
-    "repl:server": "shadow-cljs node-repl server",
-    "run:server": "node public/js/server.js",
-    "start:database": "docker-compose up"
+    "repl": "shadow-cljs cljs-repl client"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maksimr/playground-clj.git"
+    "url": "git+https://github.com/maksimr/maksimr.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maksimr/playground-clj/issues"
+    "url": "https://github.com/maksimr/maksimr.github.io/issues"
   },
-  "homepage": "https://github.com/maksimr/playground-clj#readme",
+  "homepage": "https://github.com/maksimr/maksimr.github.io#readme",
   "devDependencies": {
     "shadow-cljs": "2.17.8"
   }

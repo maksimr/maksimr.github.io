@@ -4,7 +4,4 @@
                          :output-dir  "public/js"
                          :asset-path  "js"
                          :build-hooks [(build-hooks/setup)]
-                         :modules     {:main {:entries [client.core]}}}
-                :server {:target    :node-script
-                         :output-to "public/js/server.js"
-                         :main      server.core/main}}}
+                         :modules     {:main {:entries [client.core]}}}}}
