@@ -3,11 +3,11 @@ markdown.transformers.heading_QMARK_ = (function markdown$transformers$heading_Q
 if(cljs.core.every_QMARK_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [" ",null], null), null),cljs.core.take.cljs$core$IFn$_invoke$arity$2((4),text))){
 return null;
 } else {
-var trimmed = (function (){var G__10091 = text;
-if((G__10091 == null)){
+var trimmed = (function (){var G__10194 = text;
+if((G__10194 == null)){
 return null;
 } else {
-return clojure.string.trim(G__10091);
+return clojure.string.trim(G__10194);
 }
 })();
 var and__4251__auto__ = cljs.core.not_empty(trimmed);
@@ -24,12 +24,12 @@ return markdown.transformers.heading_QMARK_(text,"=");
 markdown.transformers.h2_QMARK_ = (function markdown$transformers$h2_QMARK_(text){
 return markdown.transformers.heading_QMARK_(text,"-");
 });
-markdown.transformers.empty_line = (function markdown$transformers$empty_line(text,p__10092){
-var map__10093 = p__10092;
-var map__10093__$1 = cljs.core.__destructure_map(map__10093);
-var state = map__10093__$1;
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10093__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10093__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
+markdown.transformers.empty_line = (function markdown$transformers$empty_line(text,p__10195){
+var map__10196 = p__10195;
+var map__10196__$1 = cljs.core.__destructure_map(map__10196);
+var state = map__10196__$1;
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10196__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10196__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
 if(cljs.core.truth_((function (){var or__4253__auto__ = code;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -60,16 +60,16 @@ if(cljs.core.empty_QMARK_(remaining)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [clojure.string.join.cljs$core$IFn$_invoke$arity$1(buf),state], null);
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(remaining),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["^"], null))){
-var G__10144 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq("<sup>"),cljs.core.second(remaining),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.seq("</sup>")], 0)));
-var G__10145 = cljs.core.drop.cljs$core$IFn$_invoke$arity$2((2),remaining);
-buf = G__10144;
-remaining = G__10145;
+var G__10247 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq("<sup>"),cljs.core.second(remaining),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.seq("</sup>")], 0)));
+var G__10248 = cljs.core.drop.cljs$core$IFn$_invoke$arity$2((2),remaining);
+buf = G__10247;
+remaining = G__10248;
 continue;
 } else {
-var G__10146 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.first(remaining));
-var G__10147 = cljs.core.rest(remaining);
-buf = G__10146;
-remaining = G__10147;
+var G__10249 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.first(remaining));
+var G__10250 = cljs.core.rest(remaining);
+buf = G__10249;
+remaining = G__10250;
 continue;
 
 }
@@ -78,15 +78,15 @@ break;
 }
 }
 });
-markdown.transformers.heading = (function markdown$transformers$heading(text,p__10094){
-var map__10095 = p__10094;
-var map__10095__$1 = cljs.core.__destructure_map(map__10095);
-var state = map__10095__$1;
-var buf = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10095__$1,new cljs.core.Keyword(null,"buf","buf",-213913340));
-var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10095__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10095__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10095__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
-var heading_anchors = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10095__$1,new cljs.core.Keyword(null,"heading-anchors","heading-anchors",1713527866));
+markdown.transformers.heading = (function markdown$transformers$heading(text,p__10197){
+var map__10198 = p__10197;
+var map__10198__$1 = cljs.core.__destructure_map(map__10198);
+var state = map__10198__$1;
+var buf = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10198__$1,new cljs.core.Keyword(null,"buf","buf",-213913340));
+var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10198__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10198__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10198__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
+var heading_anchors = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10198__$1,new cljs.core.Keyword(null,"heading-anchors","heading-anchors",1713527866));
 if(cljs.core.truth_((function (){var or__4253__auto__ = codeblock;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -126,12 +126,12 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 }
 });
-markdown.transformers.br = (function markdown$transformers$br(text,p__10096){
-var map__10097 = p__10096;
-var map__10097__$1 = cljs.core.__destructure_map(map__10097);
-var state = map__10097__$1;
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10097__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10097__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
+markdown.transformers.br = (function markdown$transformers$br(text,p__10199){
+var map__10200 = p__10199;
+var map__10200__$1 = cljs.core.__destructure_map(map__10200);
+var state = map__10200__$1;
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10200__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10200__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [" "," "], null),cljs.core.take_last((2),text))) && (cljs.core.not((function (){var or__4253__auto__ = code;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -140,20 +140,20 @@ return lists;
 }
 })()))))?[cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((2),text))),"<br />"].join(''):text),state], null);
 });
-markdown.transformers.autourl_transformer = (function markdown$transformers$autourl_transformer(text,p__10099){
-var map__10100 = p__10099;
-var map__10100__$1 = cljs.core.__destructure_map(map__10100);
-var state = map__10100__$1;
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10100__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var frozen_strings = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10100__$1,new cljs.core.Keyword(null,"frozen-strings","frozen-strings",-1410661560));
+markdown.transformers.autourl_transformer = (function markdown$transformers$autourl_transformer(text,p__10202){
+var map__10203 = p__10202;
+var map__10203__$1 = cljs.core.__destructure_map(map__10203);
+var state = map__10203__$1;
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10203__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var frozen_strings = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10203__$1,new cljs.core.Keyword(null,"frozen-strings","frozen-strings",-1410661560));
 if(cljs.core.truth_(code)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [text,state], null);
 } else {
 var currently_frozen = cljs.core.volatile_BANG_(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"frozen-strings","frozen-strings",-1410661560),frozen_strings], null));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [clojure.string.replace(text,/<https?:\/\/[-A-Za-z0-9+&@#\/%?=~_()|!:,.;]*[-A-Za-z0-9+&@#\/%=~_()|]>/,(function (p1__10098_SHARP_){
-var vec__10101 = markdown.common.freeze_string.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.subs.cljs$core$IFn$_invoke$arity$3(p1__10098_SHARP_,(1),(cljs.core.count(p1__10098_SHARP_) - (1))),cljs.core.deref(currently_frozen)], 0));
-var url = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10101,(0),null);
-var frozen_strings__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10101,(1),null);
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [clojure.string.replace(text,/<https?:\/\/[-A-Za-z0-9+&@#\/%?=~_()|!:,.;]*[-A-Za-z0-9+&@#\/%=~_()|]>/,(function (p1__10201_SHARP_){
+var vec__10204 = markdown.common.freeze_string.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.subs.cljs$core$IFn$_invoke$arity$3(p1__10201_SHARP_,(1),(cljs.core.count(p1__10201_SHARP_) - (1))),cljs.core.deref(currently_frozen)], 0));
+var url = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10204,(0),null);
+var frozen_strings__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10204,(1),null);
 cljs.core.vreset_BANG_(currently_frozen,frozen_strings__$1);
 
 return ["<a href=\"",cljs.core.str.cljs$core$IFn$_invoke$arity$1(url),"\">",cljs.core.str.cljs$core$IFn$_invoke$arity$1(url),"</a>"].join('');
@@ -162,11 +162,11 @@ return ["<a href=\"",cljs.core.str.cljs$core$IFn$_invoke$arity$1(url),"\">",cljs
 });
 markdown.transformers.autoemail_transformer = (function markdown$transformers$autoemail_transformer(text,state){
 var left_pad = (function (s){
-var G__10105 = s;
+var G__10208 = s;
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((1),cljs.core.count(s))){
-return ["0",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__10105)].join('');
+return ["0",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__10208)].join('');
 } else {
-return G__10105;
+return G__10208;
 }
 });
 var encoder = (cljs.core.truth_(new cljs.core.Keyword(null,"clojurescript","clojurescript",-299769403).cljs$core$IFn$_invoke$arity$1(state))?(function (c){
@@ -180,16 +180,16 @@ return or__4253__auto__;
 } else {
 return new cljs.core.Keyword(null,"codeblock","codeblock",-851153855).cljs$core$IFn$_invoke$arity$1(state);
 }
-})())?text:clojure.string.replace(text,/<[\w._%+-]+@[\w.-]+\.[\w]{2,4}>/,(function (p1__10104_SHARP_){
-var encoded = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.map.cljs$core$IFn$_invoke$arity$2(encoder,cljs.core.subs.cljs$core$IFn$_invoke$arity$3(p1__10104_SHARP_,(1),(cljs.core.count(p1__10104_SHARP_) - (1)))));
+})())?text:clojure.string.replace(text,/<[\w._%+-]+@[\w.-]+\.[\w]{2,4}>/,(function (p1__10207_SHARP_){
+var encoded = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.map.cljs$core$IFn$_invoke$arity$2(encoder,cljs.core.subs.cljs$core$IFn$_invoke$arity$3(p1__10207_SHARP_,(1),(cljs.core.count(p1__10207_SHARP_) - (1)))));
 return ["<a href=\"mailto:",cljs.core.str.cljs$core$IFn$_invoke$arity$1(encoded),"\">",cljs.core.str.cljs$core$IFn$_invoke$arity$1(encoded),"</a>"].join('');
 }))),state], null);
 });
-markdown.transformers.set_line_state = (function markdown$transformers$set_line_state(text,p__10106){
-var map__10107 = p__10106;
-var map__10107__$1 = cljs.core.__destructure_map(map__10107);
-var state = map__10107__$1;
-var inline_heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10107__$1,new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818));
+markdown.transformers.set_line_state = (function markdown$transformers$set_line_state(text,p__10209){
+var map__10210 = p__10209;
+var map__10210__$1 = cljs.core.__destructure_map(map__10210);
+var state = map__10210__$1;
+var inline_heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10210__$1,new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818));
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [text,cljs.core.assoc_in(cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(state,new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"temp","temp",1791541284),new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818)], null),inline_heading)], null);
 });
 markdown.transformers.clear_line_state = (function markdown$transformers$clear_line_state(text,state){
@@ -208,20 +208,20 @@ return [" ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(text)].join('');
 return text;
 }
 });
-markdown.transformers.open_paragraph = (function markdown$transformers$open_paragraph(text,p__10108){
-var map__10109 = p__10108;
-var map__10109__$1 = cljs.core.__destructure_map(map__10109);
-var state = map__10109__$1;
-var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
-var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
-var blockquote = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"blockquote","blockquote",372264190));
-var heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"heading","heading",-1312171873));
-var hr = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"hr","hr",1377740067));
-var temp = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"temp","temp",1791541284));
-var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
-var inline_heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818));
-var last_line_empty_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"last-line-empty?","last-line-empty?",1279111527));
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10109__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+markdown.transformers.open_paragraph = (function markdown$transformers$open_paragraph(text,p__10211){
+var map__10212 = p__10211;
+var map__10212__$1 = cljs.core.__destructure_map(map__10212);
+var state = map__10212__$1;
+var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
+var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
+var blockquote = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"blockquote","blockquote",372264190));
+var heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"heading","heading",-1312171873));
+var hr = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"hr","hr",1377740067));
+var temp = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"temp","temp",1791541284));
+var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
+var inline_heading = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"inline-heading","inline-heading",-158773818));
+var last_line_empty_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"last-line-empty?","last-line-empty?",1279111527));
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10212__$1,new cljs.core.Keyword(null,"code","code",1586293142));
 if(cljs.core.truth_((function (){var and__4251__auto__ = paragraph;
 if(cljs.core.truth_(and__4251__auto__)){
 return lists;
@@ -299,20 +299,20 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 }
 });
-markdown.transformers.close_paragraph = (function markdown$transformers$close_paragraph(text,p__10110){
-var map__10111 = p__10110;
-var map__10111__$1 = cljs.core.__destructure_map(map__10111);
-var state = map__10111__$1;
-var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10111__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
-var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10111__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
+markdown.transformers.close_paragraph = (function markdown$transformers$close_paragraph(text,p__10213){
+var map__10214 = p__10213;
+var map__10214__$1 = cljs.core.__destructure_map(map__10214);
+var state = map__10214__$1;
+var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10214__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
+var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10214__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
 if(cljs.core.truth_((function (){var and__4251__auto__ = paragraph;
 if(cljs.core.truth_(and__4251__auto__)){
-var G__10112 = next_line;
-var G__10112__$1 = (((G__10112 == null))?null:clojure.string.trim(G__10112));
-if((G__10112__$1 == null)){
+var G__10215 = next_line;
+var G__10215__$1 = (((G__10215 == null))?null:clojure.string.trim(G__10215));
+if((G__10215__$1 == null)){
 return null;
 } else {
-return clojure.string.ends_with_QMARK_(G__10112__$1,"```");
+return clojure.string.ends_with_QMARK_(G__10215__$1,"```");
 }
 } else {
 return and__4251__auto__;
@@ -326,17 +326,17 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 markdown.transformers.paragraph = (function markdown$transformers$paragraph(text,state){
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(markdown.transformers.close_paragraph,markdown.transformers.open_paragraph(text,state));
 });
-markdown.transformers.code = (function markdown$transformers$code(text,p__10113){
-var map__10114 = p__10113;
-var map__10114__$1 = cljs.core.__destructure_map(map__10114);
-var state = map__10114__$1;
-var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
-var indent_code_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061));
-var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
-var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
-var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10114__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
+markdown.transformers.code = (function markdown$transformers$code(text,p__10216){
+var map__10217 = p__10216;
+var map__10217__$1 = cljs.core.__destructure_map(map__10217);
+var state = map__10217__$1;
+var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
+var indent_code_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061));
+var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
+var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
+var paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10217__$1,new cljs.core.Keyword(null,"paragraph","paragraph",296707709));
 var should_close_QMARK_ = (function (){var or__4253__auto__ = eof;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -357,11 +357,11 @@ if(cljs.core.truth_(indent_code_end)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [text,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.dissoc.cljs$core$IFn$_invoke$arity$variadic(state,new cljs.core.Keyword(null,"code","code",1586293142),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061),new cljs.core.Keyword(null,"indented-code","indented-code",-904930175)], 0)),new cljs.core.Keyword(null,"last-line-empty?","last-line-empty?",1279111527),true)], null);
 } else {
 if(cljs.core.truth_(code)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [[markdown.common.escape_code(clojure.string.replace_first(text,/    /,"\n")),(cljs.core.truth_(should_close_QMARK_)?"</code></pre>":null)].join(''),(function (){var G__10115 = state;
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [[markdown.common.escape_code(clojure.string.replace_first(text,/    /,"\n")),(cljs.core.truth_(should_close_QMARK_)?"</code></pre>":null)].join(''),(function (){var G__10218 = state;
 if(cljs.core.truth_(should_close_QMARK_)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__10115,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061),true);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__10218,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061),true);
 } else {
-return G__10115;
+return G__10218;
 }
 })()], null);
 } else {
@@ -373,11 +373,11 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 } else {
 var num_spaces = cljs.core.count(cljs.core.take_while.cljs$core$IFn$_invoke$arity$2(cljs.core.partial.cljs$core$IFn$_invoke$arity$2(cljs.core._EQ_," "),text));
 if((num_spaces >= (4))){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [["<pre><code>",markdown.common.escape_code(clojure.string.replace_first(text,/    /,"")),(cljs.core.truth_(should_close_QMARK_)?"</code></pre>":null)].join(''),(function (){var G__10116 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(state,new cljs.core.Keyword(null,"code","code",1586293142),true,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"indented-code","indented-code",-904930175),true], 0));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [["<pre><code>",markdown.common.escape_code(clojure.string.replace_first(text,/    /,"")),(cljs.core.truth_(should_close_QMARK_)?"</code></pre>":null)].join(''),(function (){var G__10219 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(state,new cljs.core.Keyword(null,"code","code",1586293142),true,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"indented-code","indented-code",-904930175),true], 0));
 if(cljs.core.truth_(should_close_QMARK_)){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__10116,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061),true);
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(G__10219,new cljs.core.Keyword(null,"indent-code-end","indent-code-end",644690061),true);
 } else {
-return G__10116;
+return G__10219;
 }
 })()], null);
 } else {
@@ -390,22 +390,22 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 }
 });
-markdown.transformers.codeblock = (function markdown$transformers$codeblock(text,p__10117){
-var map__10118 = p__10117;
-var map__10118__$1 = cljs.core.__destructure_map(map__10118);
-var state = map__10118__$1;
-var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10118__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
-var codeblock_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10118__$1,new cljs.core.Keyword(null,"codeblock-end","codeblock-end",1507794736));
-var indented_code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10118__$1,new cljs.core.Keyword(null,"indented-code","indented-code",-904930175));
-var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10118__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
-var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10118__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
+markdown.transformers.codeblock = (function markdown$transformers$codeblock(text,p__10220){
+var map__10221 = p__10220;
+var map__10221__$1 = cljs.core.__destructure_map(map__10221);
+var state = map__10221__$1;
+var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10221__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
+var codeblock_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10221__$1,new cljs.core.Keyword(null,"codeblock-end","codeblock-end",1507794736));
+var indented_code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10221__$1,new cljs.core.Keyword(null,"indented-code","indented-code",-904930175));
+var next_line = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10221__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287));
+var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10221__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
 var trimmed = clojure.string.trim(text);
-var next_line_closes_QMARK_ = (function (){var G__10119 = next_line;
-var G__10119__$1 = (((G__10119 == null))?null:clojure.string.trim(G__10119));
-if((G__10119__$1 == null)){
+var next_line_closes_QMARK_ = (function (){var G__10222 = next_line;
+var G__10222__$1 = (((G__10222 == null))?null:clojure.string.trim(G__10222));
+if((G__10222__$1 == null)){
 return null;
 } else {
-return clojure.string.ends_with_QMARK_(G__10119__$1,"```");
+return clojure.string.ends_with_QMARK_(G__10222__$1,"```");
 }
 })();
 if(cljs.core.truth_((function (){var and__4251__auto__ = lists;
@@ -430,9 +430,9 @@ return and__4251__auto__;
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [[markdown.common.escape_code([cljs.core.str.cljs$core$IFn$_invoke$arity$1(text),"\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.first(clojure.string.split.cljs$core$IFn$_invoke$arity$2(next_line,/```/))))].join('')),"</code></pre>"].join(''),cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(state,new cljs.core.Keyword(null,"skip-next-line?","skip-next-line?",1683617749),cljs.core.not(lists),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"codeblock-end","codeblock-end",1507794736),true,new cljs.core.Keyword(null,"last-line-empty?","last-line-empty?",1279111527),cljs.core.not(lists)], 0))], null);
 } else {
 if(((cljs.core.not(indented_code)) && (clojure.string.starts_with_QMARK_(trimmed,"```")))){
-var vec__10120 = cljs.core.split_with(cljs.core.partial.cljs$core$IFn$_invoke$arity$2(cljs.core.not_EQ_,"\n"),cljs.core.drop.cljs$core$IFn$_invoke$arity$2((3),trimmed));
-var lang = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10120,(0),null);
-var code = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10120,(1),null);
+var vec__10223 = cljs.core.split_with(cljs.core.partial.cljs$core$IFn$_invoke$arity$2(cljs.core.not_EQ_,"\n"),cljs.core.drop.cljs$core$IFn$_invoke$arity$2((3),trimmed));
+var lang = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10223,(0),null);
+var code = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10223,(1),null);
 var lang__$1 = clojure.string.trim(clojure.string.join.cljs$core$IFn$_invoke$arity$1(lang));
 var s = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.rest(code));
 var formatter = new cljs.core.Keyword(null,"code-style","code-style",-2144009586).cljs$core$IFn$_invoke$arity$1(state);
@@ -465,13 +465,13 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   states blockquote-start and blockquote-end so that tags can be added.
  *   This approach enables lists to be included in blockquotes.
  */
-markdown.transformers.blockquote_1 = (function markdown$transformers$blockquote_1(text,p__10123){
-var map__10124 = p__10123;
-var map__10124__$1 = cljs.core.__destructure_map(map__10124);
-var state = map__10124__$1;
-var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10124__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
-var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10124__$1,new cljs.core.Keyword(null,"code","code",1586293142));
-var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10124__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
+markdown.transformers.blockquote_1 = (function markdown$transformers$blockquote_1(text,p__10226){
+var map__10227 = p__10226;
+var map__10227__$1 = cljs.core.__destructure_map(map__10227);
+var state = map__10227__$1;
+var eof = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10227__$1,new cljs.core.Keyword(null,"eof","eof",-489063237));
+var code = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10227__$1,new cljs.core.Keyword(null,"code","code",1586293142));
+var codeblock = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10227__$1,new cljs.core.Keyword(null,"codeblock","codeblock",-851153855));
 var trimmed = clojure.string.trim(text);
 if(cljs.core.truth_((function (){var or__4253__auto__ = code;
 if(cljs.core.truth_(or__4253__auto__)){
@@ -522,14 +522,14 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   Closing a blockquote with a list in it is a bit more complex,
  *   as the list is not closed until the following blank line.
  */
-markdown.transformers.blockquote_2 = (function markdown$transformers$blockquote_2(text,p__10125){
-var map__10126 = p__10125;
-var map__10126__$1 = cljs.core.__destructure_map(map__10126);
-var state = map__10126__$1;
-var blockquote_start = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10126__$1,new cljs.core.Keyword(null,"blockquote-start","blockquote-start",276074935));
-var blockquote_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10126__$1,new cljs.core.Keyword(null,"blockquote-end","blockquote-end",1122544964));
-var blockquote_paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10126__$1,new cljs.core.Keyword(null,"blockquote-paragraph","blockquote-paragraph",1931783682));
-var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10126__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
+markdown.transformers.blockquote_2 = (function markdown$transformers$blockquote_2(text,p__10228){
+var map__10229 = p__10228;
+var map__10229__$1 = cljs.core.__destructure_map(map__10229);
+var state = map__10229__$1;
+var blockquote_start = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10229__$1,new cljs.core.Keyword(null,"blockquote-start","blockquote-start",276074935));
+var blockquote_end = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10229__$1,new cljs.core.Keyword(null,"blockquote-end","blockquote-end",1122544964));
+var blockquote_paragraph = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10229__$1,new cljs.core.Keyword(null,"blockquote-paragraph","blockquote-paragraph",1931783682));
+var lists = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10229__$1,new cljs.core.Keyword(null,"lists","lists",-884730684));
 var not_in_list = ((cljs.core.not(lists)) || (cljs.core.empty_QMARK_(lists)));
 if(cljs.core.truth_(blockquote_start)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [["<blockquote><p>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(text)].join(''),cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(state,new cljs.core.Keyword(null,"blockquote-start","blockquote-start",276074935))], null);
@@ -552,12 +552,12 @@ markdown.transformers.footer = (function markdown$transformers$footer(footnotes)
 if(cljs.core.empty_QMARK_(new cljs.core.Keyword(null,"processed","processed",800622264).cljs$core$IFn$_invoke$arity$1(footnotes))){
 return "";
 } else {
-return (function (p1__10127_SHARP_){
-return ["<ol class='footnotes'>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__10127_SHARP_),"</ol>"].join('');
-})(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (footnotes__$1,p__10128){
-var vec__10129 = p__10128;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10129,(0),null);
-var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10129,(1),null);
+return (function (p1__10230_SHARP_){
+return ["<ol class='footnotes'>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__10230_SHARP_),"</ol>"].join('');
+})(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (footnotes__$1,p__10231){
+var vec__10232 = p__10231;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10232,(0),null);
+var label = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10232,(1),null);
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(footnotes__$1),"<li id='fn-",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id),"'>",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.interpose.cljs$core$IFn$_invoke$arity$2(" ",label))),"<a href='#fnref",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id),"'>&#8617;</a></li>"].join('');
 }),"",cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.sorted_map(),new cljs.core.Keyword(null,"processed","processed",800622264).cljs$core$IFn$_invoke$arity$1(footnotes))));
 }
@@ -570,13 +570,13 @@ return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(footnotes__$1),"<li id='fn-"
  */
 markdown.transformers.parse_metadata_line = (function markdown$transformers$parse_metadata_line(line){
 if(cljs.core.truth_(line)){
-var vec__10132 = cljs.core.re_matches(/^([0-9A-Za-z_-]*):(.*)$/,line);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10132,(0),null);
-var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10132,(1),null);
-var val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10132,(2),null);
-var vec__10135 = cljs.core.re_matches(/^    (.*)$/,line);
-var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10135,(0),null);
-var next_val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10135,(1),null);
+var vec__10235 = cljs.core.re_matches(/^([0-9A-Za-z_-]*):(.*)$/,line);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10235,(0),null);
+var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10235,(1),null);
+var val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10235,(2),null);
+var vec__10238 = cljs.core.re_matches(/^    (.*)$/,line);
+var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10238,(0),null);
+var next_val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10238,(1),null);
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(clojure.string.trim(line),"")){
 if(cljs.core.truth_(key)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(clojure.string.lower_case(key)),val], null);
@@ -607,19 +607,19 @@ var prev_key = null;
 while(true){
 if(cljs.core.seq(remain)){
 var data = cljs.core.first(remain);
-var vec__10141 = ((cljs.core.sequential_QMARK_(data))?data:new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [prev_key,data], null));
-var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10141,(0),null);
-var val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10141,(1),null);
+var vec__10244 = ((cljs.core.sequential_QMARK_(data))?data:new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [prev_key,data], null));
+var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10244,(0),null);
+var val = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10244,(1),null);
 var prev_val = cljs.core.get.cljs$core$IFn$_invoke$arity$3(acc,key,cljs.core.PersistentVector.EMPTY);
 var postfix = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [" "," "], null),cljs.core.take_last((2),val)))?"\n":"");
 var norm_val = [clojure.string.trim(val),postfix].join('');
 var new_val = (((!(cljs.core.empty_QMARK_(norm_val))))?cljs.core.conj.cljs$core$IFn$_invoke$arity$2(prev_val,norm_val):prev_val);
-var G__10198 = cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([acc,cljs.core.PersistentArrayMap.createAsIfByAssoc([key,new_val])], 0));
-var G__10199 = cljs.core.rest(remain);
-var G__10200 = key;
-acc = G__10198;
-remain = G__10199;
-prev_key = G__10200;
+var G__10266 = cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([acc,cljs.core.PersistentArrayMap.createAsIfByAssoc([key,new_val])], 0));
+var G__10267 = cljs.core.rest(remain);
+var G__10268 = key;
+acc = G__10266;
+remain = G__10267;
+prev_key = G__10268;
 continue;
 } else {
 return acc;
