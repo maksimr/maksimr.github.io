@@ -1,22 +1,22 @@
 goog.provide('markdown.core');
-markdown.core.init_transformer = (function markdown$core$init_transformer(p__10251){
-var map__10252 = p__10251;
-var map__10252__$1 = cljs.core.__destructure_map(map__10252);
-var replacement_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"replacement-transformers","replacement-transformers",-2028552897));
-var custom_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"custom-transformers","custom-transformers",1440601790));
-var inhibit_separator = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"inhibit-separator","inhibit-separator",1268116222));
+markdown.core.init_transformer = (function markdown$core$init_transformer(p__10247){
+var map__10248 = p__10247;
+var map__10248__$1 = cljs.core.__destructure_map(map__10248);
+var replacement_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"replacement-transformers","replacement-transformers",-2028552897));
+var custom_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"custom-transformers","custom-transformers",1440601790));
+var inhibit_separator = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"inhibit-separator","inhibit-separator",1268116222));
 return (function (html,line,next_line,state){
-var _STAR_inhibit_separator_STAR__orig_val__10253 = markdown.common._STAR_inhibit_separator_STAR_;
-var _STAR_inhibit_separator_STAR__temp_val__10254 = inhibit_separator;
-(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__temp_val__10254);
+var _STAR_inhibit_separator_STAR__orig_val__10251 = markdown.common._STAR_inhibit_separator_STAR_;
+var _STAR_inhibit_separator_STAR__temp_val__10252 = inhibit_separator;
+(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__temp_val__10252);
 
-try{var vec__10255 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (p__10258,transformer){
-var vec__10259 = p__10258;
-var text = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10259,(0),null);
-var state__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10259,(1),null);
-var G__10262 = text;
-var G__10263 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(state__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287),next_line);
-return (transformer.cljs$core$IFn$_invoke$arity$2 ? transformer.cljs$core$IFn$_invoke$arity$2(G__10262,G__10263) : transformer.call(null,G__10262,G__10263));
+try{var vec__10253 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (p__10256,transformer){
+var vec__10257 = p__10256;
+var text = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10257,(0),null);
+var state__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10257,(1),null);
+var G__10260 = text;
+var G__10261 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(state__$1,new cljs.core.Keyword(null,"next-line","next-line",-1187000287),next_line);
+return (transformer.cljs$core$IFn$_invoke$arity$2 ? transformer.cljs$core$IFn$_invoke$arity$2(G__10260,G__10261) : transformer.call(null,G__10260,G__10261));
 }),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [line,state], null),(function (){var or__4253__auto__ = replacement_transformers;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -24,12 +24,12 @@ return or__4253__auto__;
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(markdown.transformers.transformer_vector,custom_transformers);
 }
 })());
-var text = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10255,(0),null);
-var new_state = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10255,(1),null);
+var text = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10253,(0),null);
+var new_state = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10253,(1),null);
 html.append(text);
 
 return new_state;
-}finally {(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__orig_val__10253);
+}finally {(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__orig_val__10251);
 }});
 });
 /**
@@ -314,11 +314,11 @@ return markdown.core.md_to_html_string_STAR_(text,cljs.core.into.cljs$core$IFn$_
 (markdown.core.md__GT_html_with_meta.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(markdown.core.md__GT_html_with_meta.cljs$lang$applyTo = (function (seq10302){
-var G__10303 = cljs.core.first(seq10302);
-var seq10302__$1 = cljs.core.next(seq10302);
+(markdown.core.md__GT_html_with_meta.cljs$lang$applyTo = (function (seq10299){
+var G__10300 = cljs.core.first(seq10299);
+var seq10299__$1 = cljs.core.next(seq10299);
 var self__4851__auto__ = this;
-return self__4851__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10303,seq10302__$1);
+return self__4851__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10300,seq10299__$1);
 }));
 
 /**
@@ -352,9 +352,9 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(markdown.core.md__GT_html,p
 (markdown.core.mdToHtml.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(markdown.core.mdToHtml.cljs$lang$applyTo = (function (seq10304){
+(markdown.core.mdToHtml.cljs$lang$applyTo = (function (seq10301){
 var self__4852__auto__ = this;
-return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq10304));
+return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq10301));
 }));
 
 /**
@@ -388,9 +388,9 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(markdown.core.md__GT_html_w
 (markdown.core.mdToHtmlWithMeta.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(markdown.core.mdToHtmlWithMeta.cljs$lang$applyTo = (function (seq10305){
+(markdown.core.mdToHtmlWithMeta.cljs$lang$applyTo = (function (seq10302){
 var self__4852__auto__ = this;
-return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq10305));
+return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq10302));
 }));
 
 

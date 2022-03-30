@@ -1,14 +1,14 @@
 goog.provide('markdown.tables');
 markdown.tables.parse_table_row = (function markdown$tables$parse_table_row(text){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__10188_SHARP_){
-return cljs.core.identity(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text","text",-1790561697),p1__10188_SHARP_], null));
-}),cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,(function (p1__10187_SHARP_){
-return clojure.string.split.cljs$core$IFn$_invoke$arity$2(p1__10187_SHARP_,/\|/);
-})(clojure.string.trim((function (p1__10186_SHARP_){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(p1__10186_SHARP_),"|")){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.rest(p1__10186_SHARP_));
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__10184_SHARP_){
+return cljs.core.identity(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text","text",-1790561697),p1__10184_SHARP_], null));
+}),cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.string.trim,(function (p1__10183_SHARP_){
+return clojure.string.split.cljs$core$IFn$_invoke$arity$2(p1__10183_SHARP_,/\|/);
+})(clojure.string.trim((function (p1__10182_SHARP_){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(p1__10182_SHARP_),"|")){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.rest(p1__10182_SHARP_));
 } else {
-return p1__10186_SHARP_;
+return p1__10182_SHARP_;
 }
 })(text)))));
 });
