@@ -1,14 +1,14 @@
 goog.provide('markdown.core');
-markdown.core.init_transformer = (function markdown$core$init_transformer(p__10247){
-var map__10248 = p__10247;
-var map__10248__$1 = cljs.core.__destructure_map(map__10248);
-var replacement_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"replacement-transformers","replacement-transformers",-2028552897));
-var custom_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"custom-transformers","custom-transformers",1440601790));
-var inhibit_separator = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10248__$1,new cljs.core.Keyword(null,"inhibit-separator","inhibit-separator",1268116222));
+markdown.core.init_transformer = (function markdown$core$init_transformer(p__10251){
+var map__10252 = p__10251;
+var map__10252__$1 = cljs.core.__destructure_map(map__10252);
+var replacement_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"replacement-transformers","replacement-transformers",-2028552897));
+var custom_transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"custom-transformers","custom-transformers",1440601790));
+var inhibit_separator = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10252__$1,new cljs.core.Keyword(null,"inhibit-separator","inhibit-separator",1268116222));
 return (function (html,line,next_line,state){
-var _STAR_inhibit_separator_STAR__orig_val__10249 = markdown.common._STAR_inhibit_separator_STAR_;
-var _STAR_inhibit_separator_STAR__temp_val__10250 = inhibit_separator;
-(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__temp_val__10250);
+var _STAR_inhibit_separator_STAR__orig_val__10253 = markdown.common._STAR_inhibit_separator_STAR_;
+var _STAR_inhibit_separator_STAR__temp_val__10254 = inhibit_separator;
+(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__temp_val__10254);
 
 try{var vec__10255 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (p__10258,transformer){
 var vec__10259 = p__10258;
@@ -29,7 +29,7 @@ var new_state = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10255,(1),null)
 html.append(text);
 
 return new_state;
-}finally {(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__orig_val__10249);
+}finally {(markdown.common._STAR_inhibit_separator_STAR_ = _STAR_inhibit_separator_STAR__orig_val__10253);
 }});
 });
 /**

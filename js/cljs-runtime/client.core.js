@@ -1,7 +1,7 @@
 goog.provide('client.core');
 client.core.articles = cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (id){
-return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),id,new cljs.core.Keyword(null,"title","title",636505583),id,new cljs.core.Keyword(null,"uri","uri",-774711847),["/docs/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join('')], null);
-}),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["hello-world.md"], null));
+return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),id,new cljs.core.Keyword(null,"title","title",636505583),clojure.string.replace(clojure.string.replace(id,/_/," "),/\.md$/,""),new cljs.core.Keyword(null,"uri","uri",-774711847),["/docs/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(id)].join('')], null);
+}),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Setup_shadow-cljs_react_project.md"], null));
 client.core.fetch_article = (function client$core$fetch_article(uri){
 return fetch(uri).then((function (p1__10400_SHARP_){
 return p1__10400_SHARP_.text();

@@ -60,16 +60,16 @@ if(cljs.core.empty_QMARK_(remaining)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [clojure.string.join.cljs$core$IFn$_invoke$arity$1(buf),state], null);
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(remaining),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["^"], null))){
-var G__10251 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq("<sup>"),cljs.core.second(remaining),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.seq("</sup>")], 0)));
-var G__10252 = cljs.core.drop.cljs$core$IFn$_invoke$arity$2((2),remaining);
-buf = G__10251;
-remaining = G__10252;
+var G__10247 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq("<sup>"),cljs.core.second(remaining),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.seq("</sup>")], 0)));
+var G__10248 = cljs.core.drop.cljs$core$IFn$_invoke$arity$2((2),remaining);
+buf = G__10247;
+remaining = G__10248;
 continue;
 } else {
-var G__10253 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.first(remaining));
-var G__10254 = cljs.core.rest(remaining);
-buf = G__10253;
-remaining = G__10254;
+var G__10249 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(buf,cljs.core.first(remaining));
+var G__10250 = cljs.core.rest(remaining);
+buf = G__10249;
+remaining = G__10250;
 continue;
 
 }
