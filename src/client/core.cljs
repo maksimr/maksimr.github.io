@@ -3,12 +3,13 @@
    [reagent.core :as r]
    [reagent.dom :as rdom]
    [markdown.core :refer [md->html]]
+   [clojure.string :as string]
    [client.docs :as docs]))
 
 (def articles
   (map (fn [id]
          {:id id
-          :title id
+          :title (string/replace (string/replace id #"_" " ") #"\.md$" "")
           :uri (str "/docs/" id)})
     (docs/read-articles "./public/docs")))
 
