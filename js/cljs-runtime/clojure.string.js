@@ -23,7 +23,7 @@ return s.replace(r,replacement);
 });
 clojure.string.replace_with = (function clojure$string$replace_with(f){
 return (function() { 
-var G__7489__delegate = function (args){
+var G__7474__delegate = function (args){
 var matches = cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((2),args);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(matches),(1))){
 var G__7461 = cljs.core.first(matches);
@@ -33,21 +33,21 @@ var G__7462 = cljs.core.vec(matches);
 return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__7462) : f.call(null,G__7462));
 }
 };
-var G__7489 = function (var_args){
+var G__7474 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__7490__i = 0, G__7490__a = new Array(arguments.length -  0);
-while (G__7490__i < G__7490__a.length) {G__7490__a[G__7490__i] = arguments[G__7490__i + 0]; ++G__7490__i;}
-  args = new cljs.core.IndexedSeq(G__7490__a,0,null);
+var G__7475__i = 0, G__7475__a = new Array(arguments.length -  0);
+while (G__7475__i < G__7475__a.length) {G__7475__a[G__7475__i] = arguments[G__7475__i + 0]; ++G__7475__i;}
+  args = new cljs.core.IndexedSeq(G__7475__a,0,null);
 } 
-return G__7489__delegate.call(this,args);};
-G__7489.cljs$lang$maxFixedArity = 0;
-G__7489.cljs$lang$applyTo = (function (arglist__7491){
-var args = cljs.core.seq(arglist__7491);
-return G__7489__delegate(args);
+return G__7474__delegate.call(this,args);};
+G__7474.cljs$lang$maxFixedArity = 0;
+G__7474.cljs$lang$applyTo = (function (arglist__7476){
+var args = cljs.core.seq(arglist__7476);
+return G__7474__delegate(args);
 });
-G__7489.cljs$core$IFn$_invoke$arity$variadic = G__7489__delegate;
-return G__7489;
+G__7474.cljs$core$IFn$_invoke$arity$variadic = G__7474__delegate;
+return G__7474;
 })()
 ;
 });
@@ -139,10 +139,10 @@ var sb = (new goog.string.StringBuffer());
 var coll__$1 = cljs.core.seq(coll);
 while(true){
 if((!((coll__$1 == null)))){
-var G__7493 = sb.append(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.first(coll__$1)));
-var G__7494 = cljs.core.next(coll__$1);
-sb = G__7493;
-coll__$1 = G__7494;
+var G__7478 = sb.append(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.first(coll__$1)));
+var G__7479 = cljs.core.next(coll__$1);
+sb = G__7478;
+coll__$1 = G__7479;
 continue;
 } else {
 return sb.toString();
@@ -164,10 +164,10 @@ if((coll__$2 == null)){
 sb.append(separator);
 }
 
-var G__7495 = sb;
-var G__7496 = coll__$2;
-sb = G__7495;
-coll__$1 = G__7496;
+var G__7480 = sb;
+var G__7481 = coll__$2;
+sb = G__7480;
+coll__$1 = G__7481;
 continue;
 } else {
 return sb.toString();
@@ -201,8 +201,8 @@ clojure.string.pop_last_while_empty = (function clojure$string$pop_last_while_em
 var v__$1 = v;
 while(true){
 if(("" === cljs.core.peek(v__$1))){
-var G__7501 = cljs.core.pop(v__$1);
-v__$1 = G__7501;
+var G__7493 = cljs.core.pop(v__$1);
+v__$1 = G__7493;
 continue;
 } else {
 return v__$1;
@@ -271,12 +271,12 @@ return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(parts,s__$1);
 var m = cljs.core.re_find(re,s__$1);
 if((!((m == null)))){
 var index = s__$1.indexOf(m);
-var G__7507 = s__$1.substring((index + cljs.core.count(m)));
-var G__7508 = (limit__$1 - (1));
-var G__7509 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(parts,s__$1.substring((0),index));
-s__$1 = G__7507;
-limit__$1 = G__7508;
-parts = G__7509;
+var G__7502 = s__$1.substring((index + cljs.core.count(m)));
+var G__7503 = (limit__$1 - (1));
+var G__7504 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(parts,s__$1.substring((0),index));
+s__$1 = G__7502;
+limit__$1 = G__7503;
+parts = G__7504;
 continue;
 } else {
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(parts,s__$1);
@@ -325,8 +325,8 @@ return "";
 } else {
 var ch = cljs.core.get.cljs$core$IFn$_invoke$arity$2(s,(index - (1)));
 if(((("\n" === ch)) || (("\r" === ch)))){
-var G__7511 = (index - (1));
-index = G__7511;
+var G__7509 = (index - (1));
+index = G__7509;
 continue;
 } else {
 return s.substring((0),index);
@@ -364,8 +364,8 @@ buffer.append(cljs.core.str.cljs$core$IFn$_invoke$arity$1(replacement));
 buffer.append(ch);
 }
 
-var G__7512 = (index + (1));
-index = G__7512;
+var G__7510 = (index + (1));
+index = G__7510;
 continue;
 }
 break;
